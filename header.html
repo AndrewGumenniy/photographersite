@@ -1,0 +1,74 @@
+<header class="header">
+
+	<div class="container">
+		<div class="row">
+	      <div class="logo col-md-2">
+	        <a href="/">
+	          <span class="name">EVGENIY <br>SWAROVSKIH</span>
+	          <span class="profession">PHOTOGRAPHER</span>
+	        </a>
+	      </div>
+
+	      <div onclick="openNav()" class="hamburger-menu">
+	         <div class="bar1"></div>
+	         <div class="bar2"></div>
+	         <div class="bar3"></div>
+	      </div>
+	    
+	      <ul class="main-nav col-md-7"  >
+	        <li class="portfolio"><a href="/portfolio">Портфолио</a></li>
+	        <li class="weddings"><a href="/weddings">Свадебное<br> портфолио</a></li>
+	        <li class="certificate"><a href="/certificate">Сертификат</a></li>
+	        <li class="reviews"><a href="/reviews">Отзывы</a></li>
+	        <li class="about"><a href="/about">Обо мне</a></li>
+	      </ul>
+
+	      <div class="contacts col-md-3">
+	        <span class="number">+38 (066) 991 28 97</span>
+	        <span class="social-networks">
+	            <a title="instagram" target="_blank" href="https://www.instagram.com/evgensw">Инста</a>
+	            <a title="facebook" target="_blank" href="https://www.facebook.com/swevgen">Фейсбук</a>
+	            <a title="vk" target="_blank" href="https://vk.com/id62353685">ВК</a>
+	        </span>
+	      </div>
+	    </div> 
+	</div>
+</header>
+    <div id="main-nav">
+        <ul class="nav-menu col-md-7"  >
+	        <li class="portfolio"><a href="/portfolio">Портфолио</a></li>
+	        <li class="weddings"><a href="/weddings">Свадебное<br> портфолио</a></li>
+	        <li class="certificate"><a href="/certificate">Сертификат</a></li>
+	        <li class="reviews"><a href="/reviews">Отзывы</a></li>
+	        <li class="about"><a href="/about">Обо мне</a></li>
+	    </ul>
+	    <div class="bottom-block">
+		    <div class="phones">
+		    	<i class="social-mobile-icons"></i>
+			    <p><a href="tel:+38 (066) 991 28 97">+38 (066) 991 28 97</a></p>
+			    <p><a href="tel:+38 (063) 261 97 31">+38 (063) 261 97 31</a></p>
+			</div>
+	        <ul class="social-mobile">
+		        <a title="instagram"  target="_blank" href="https://www.instagram.com/evgensw"><li class="social instagram"></li></a>        
+		        <a title="vk" title="https://vk.com/evgen_sw" target="_blank" href="https://vk.com/id62353685"><li class="social vk"></li></a>
+		        <a title="facebook" target="_blank" href="https://www.facebook.com/swevgen"><li class="social fb"></li></a>
+	        </ul>
+        </div>
+    </div>
+	      
+<div id="modalbg" class="modalbg" onclick="closeNav()"></div> 
+<script>
+	 function openNav() {
+    // document.getElementById("main-nav").style.display = "block";
+    document.querySelector("#main-nav .bottom-block").style.opacity = "1";
+    document.getElementById("modalbg").style.display = "block";
+    document.getElementById("main-nav").style.width = "250px";
+    
+}
+
+function closeNav() {
+	document.querySelector("#main-nav .bottom-block").style.opacity = "0";
+    document.getElementById("modalbg").style.display = "none";
+    document.getElementById("main-nav").style.width = "0px";
+}
+</script>
